@@ -2,7 +2,7 @@
 
 Runs Google Play (including All Areas) in a desktop window.
 
-![Screenshot of Package All Areas in action](https://raw.github.com/tdwright/packageallareas/assets/screenshot.png)
+![Screenshot of Package All Areas in action](https://raw.github.com/tdwright/packageallareas/assets/PackagedAllAreas.png)
 
 ## Todo:
 
