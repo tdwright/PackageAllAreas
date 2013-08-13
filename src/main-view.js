@@ -12,6 +12,18 @@ var loaded = function() {
 	
     webView.attr('src', 'https://play.google.com/music/listen');
     webView.on('loadstop', function() {
-        // do something maybe?
+		webView.get(0).executeScript({file: '/src/injectme.js'});
+    });
+}
+
+var injectCSS = function(webView, cssURL) {
+    var url = chrome.runtime.getURL(cssURL);
+    $.get(url, function(data) {
+        var cssToInject = data;
+        var js = 'var registered';
+        webView.executeScript({ code: js });
+        js = 'var cssToInject = ' + JSON.stringify(cssToInject) + ';';
+        webView.executeScript({ code: js });
+        webView.executeScript({ code: '(' + myCssHack + ')()' });
     });
 }
