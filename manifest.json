@@ -1,7 +1,7 @@
 {
 	"name": "Package All Areas",
 	"description": "Desktop Client for Google Play.",
-	"version": "0.1",
+	"version": "0.2",
 	"app": {
 	"background": {
 		"scripts": ["src/background.js"]
