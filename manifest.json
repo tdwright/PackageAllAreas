@@ -1,0 +1,14 @@
+{
+	"name": "Package All Areas",
+	"description": "Desktop Client for Google Play.",
+	"version": "0.1",
+	"app": {
+	"background": {
+		"scripts": ["src/background.js"]
+	}
+	},
+	"permissions": [
+		"webview",
+		"http://fonts.googleapis.com/"
+	]
+}
